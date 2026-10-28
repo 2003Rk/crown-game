@@ -66,4 +66,5 @@ App Store approval is never guaranteed. This list follows the current App Review
 - 🔲 Age rating questionnaire completed (expected 4+)
 
 ## StoreKit
-- ✅ No purchases or monetization UI; StoreKit is linked only for SDK attribution support
+- ✅ No In-App Purchase capability, entitlement, purchase code or monetization UI
+- ✅ The supplied SDK handles its optional StoreKit attribution linkage automatically

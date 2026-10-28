@@ -31,7 +31,6 @@ targets:
       - package: Adjust
         product: AdjustSdk
       - sdk: Security.framework
-      - sdk: StoreKit.framework
       - sdk: libc++.tbd
     settings:
       base:

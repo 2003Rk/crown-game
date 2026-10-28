@@ -73,7 +73,6 @@
 		E0F25955D030129EC6EBAFE0 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232A5FF9FAE1BD88F3C66DA /* PersistenceTests.swift */; };
 		E3F60327A9D3FEE5B66BBE1B /* ProfileAndStatisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03EF026936E0833903FA01 /* ProfileAndStatisticsTests.swift */; };
 		EA92BFFB8574C42784BEB5B1 /* FallingObjectKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F78FC9EFC7CD00D5D76CFF /* FallingObjectKind.swift */; };
-		ED25C71647C2F7AFB7A9FE95 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B5C742F3A32AAF5B1222EA /* StoreKit.framework */; };
 		F5B812F4F0089EE12BB469F6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5F689DF8E093773A0DD95 /* GameScene.swift */; };
 		FEBCB8444AF68F2A4AE70E06 /* StorageQuotaManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D9F88B715922F353AB33EE /* StorageQuotaManager.xcframework */; };
 		FFC11A702F4CCC5D735932D8 /* sfx_amethyst.caf in Resources */ = {isa = PBXBuildFile; fileRef = 171A10D2D16792CA911504AC /* sfx_amethyst.caf */; };
@@ -110,7 +109,6 @@
 		1D366A0721CF9938BA460C69 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		1F42386D8FBCAA3C3C57AAFE /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		207A2C0E833F67F649304B76 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		20B5C742F3A32AAF5B1222EA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		25A1CF98D3865F324A1E761D /* sfx_achievement.caf */ = {isa = PBXFileReference; path = sfx_achievement.caf; sourceTree = "<group>"; };
 		28CAC3DA9D0FB52B7C9BD79F /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		31C1F063BC1D2292FF6D793D /* SDKLaunchGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLaunchGate.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 				FEBCB8444AF68F2A4AE70E06 /* StorageQuotaManager.xcframework in Frameworks */,
 				7FF5CCFF2954DDFDD3F38EC7 /* AdjustSdk in Frameworks */,
 				B53E9C163BBD4631C06AF816 /* Security.framework in Frameworks */,
-				ED25C71647C2F7AFB7A9FE95 /* StoreKit.framework in Frameworks */,
 				4CAA054E7EA96E88B3ADAE39 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +259,6 @@
 				1829BCA1D17986F283D90697 /* libc++.tbd */,
 				035B4CD377557B5F470D29F6 /* Security.framework */,
 				45D9F88B715922F353AB33EE /* StorageQuotaManager.xcframework */,
-				20B5C742F3A32AAF5B1222EA /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

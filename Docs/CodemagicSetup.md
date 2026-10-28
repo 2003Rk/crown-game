@@ -19,12 +19,7 @@ In Codemagic, open the application and add these encrypted variables to a group 
 - `APP_STORE_CONNECT_ISSUER_ID`: App Store Connect Issuer ID
 - `CERTIFICATE_PRIVATE_KEY`: PEM private key used to create or fetch the distribution certificate
 
-Add these variables to a group named `ios_config`:
-
-- `APPLE_TEAM_ID`: 10-character Apple Developer Team ID
-- `APP_STORE_APPLE_ID`: numeric App Store Connect Apple ID
-
-The bundle identifier is fixed to `com.crownx.game` in both the Xcode configuration and `codemagic.yaml`.
+The bundle identifier (`com.crownx.game`), Apple Team ID (`TBTMM94Q45`) and numeric App Store Connect Apple ID (`6827957657`) are configured directly in `codemagic.yaml`.
 
 To create `CERTIFICATE_PRIVATE_KEY` locally, run:
 

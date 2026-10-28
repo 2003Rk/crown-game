@@ -7,9 +7,10 @@ workflows:
     environment:
       groups:
         - appstore_credentials
-        - ios_config
       vars:
         BUNDLE_ID: com.crownx.game
+        APPLE_TEAM_ID: TBTMM94Q45
+        APP_STORE_APPLE_ID: "6827957657"
         XCODE_PROJECT: CatchTheJewels.xcodeproj
         XCODE_SCHEME: CatchTheJewels
       xcode: 26.3

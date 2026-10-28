@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06515653B51CA96B3BC045D0 /* music_royal_loop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 072027DF69C2A33667758B95 /* music_royal_loop.m4a */; };
+		0AD76149DE75BF5EB75F9FAE /* sfx_sapphire.caf in Resources */ = {isa = PBXBuildFile; fileRef = F9F8473C28F077376B562A0A /* sfx_sapphire.caf */; };
+		0DD0A2A8095B59CDDDD11D98 /* sfx_gold.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7166D4F4A94D37B959136F9B /* sfx_gold.caf */; };
+		0EBE50F1F32A38E5607BE81D /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F42386D8FBCAA3C3C57AAFE /* PrivacyView.swift */; };
+		16937297B5F13E683BC96755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4494346A171BD6BE514BE6EA /* Assets.xcassets */; };
+		18E9C53C84C10F67AEB208CA /* ArtworkRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84985490850E7C9199AB0CD0 /* ArtworkRenderer.swift */; };
+		1B87FED20D1614D69B3DF7BD /* ProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D3F7FD15D128AB7607AD7C /* ProgressStore.swift */; };
+		1EE462371C4EC32B9C59418D /* CatchTheJewelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FBF2B2EECC1D60FB4D161 /* CatchTheJewelsUITests.swift */; };
+		21CEE021DAD08E731693F12E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CC7A190DE9CEC7CF5C160D /* SettingsView.swift */; };
+		21F5ADAF9CF53495ACB5E4B4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B3903D7F10AD371445219DDC /* PrivacyInfo.xcprivacy */; };
+		224A7400178F191E9E33F8DF /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF31FF9DEC67A5896327F5 /* GameSession.swift */; };
+		2A15F7EC53B62F2C3EDFA567 /* DifficultyAndSpawnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33C2555C002CB7293DE960 /* DifficultyAndSpawnTests.swift */; };
+		2F122F4308473F2600479BA9 /* LaunchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399E5E96AC39DB19D992BCB8 /* LaunchOptions.swift */; };
+		2F9F9B1EF883F9353C2D6B7F /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E34BA02BD5704BC13F65B /* Components.swift */; };
+		342EACB2A525EF4BFB1B3915 /* GameOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5ACD6E55054BC76FCF697 /* GameOverlays.swift */; };
+		3620AD7C3A3CCD8BDFB32295 /* DailyChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FC816A1979001C4F141BA /* DailyChallenge.swift */; };
+		37176C91AC59B820FBE73365 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A16B6FEC6C3421D1CE4B2 /* AppModel.swift */; };
+		3B2D54933CFEA9CDDAD4D93A /* sfx_ruby.caf in Resources */ = {isa = PBXBuildFile; fileRef = EC82139E08A65660EADECE7C /* sfx_ruby.caf */; };
+		42FDD31CD0306C5A82421894 /* sfx_gameOver.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7631867A7AD4B3ED4221CF53 /* sfx_gameOver.caf */; };
+		43EF86A445EE56AAAE3B0CE4 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4A7C7E036F0EAC26BFB02 /* PlayView.swift */; };
+		44D8C1321EC7F103B52298E8 /* TiltInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EDF2D5A012F3BB58352A6D /* TiltInput.swift */; };
+		45C54F4DFA32E1757FC26DBD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F61401CD16412CB4781E22 /* GameController.swift */; };
+		470926A496B65BA3898B2D7E /* GameNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1F1A9534B026FA31182E0A /* GameNodes.swift */; };
+		4A1C4D8A8981527F3AF2B4B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B6DC261B3AE557907EA50 /* HomeView.swift */; };
+		4A8EB2C5F23C7EDD09FB26DD /* SpawnPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA8A4F1D176B33A7AE0B33 /* SpawnPlanner.swift */; };
+		4AF42331713569E42C8ED991 /* CatchTheJewelsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970472AAB8A311312E06C81 /* CatchTheJewelsApp.swift */; };
+		4CAA054E7EA96E88B3ADAE39 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1829BCA1D17986F283D90697 /* libc++.tbd */; };
+		5001332AD545D4C0AD5F3A5E /* sfx_start.caf in Resources */ = {isa = PBXBuildFile; fileRef = 9FABE383C4CFEE45D427AE8B /* sfx_start.caf */; };
+		536F8F6FA09D123728ACCD63 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A70C007892365892DC142E4 /* Difficulty.swift */; };
+		55F34DDDE93AD814F7562C0B /* GameGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58E05CFE883A87CFD83D36 /* GameGeometry.swift */; };
+		6409460DFE71B1E001993806 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1470E9FCA9971736AD1F975 /* HowToPlayView.swift */; };
+		65663BA46915BA6C729FB3E0 /* GlassBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFD9EED6ABEAA19E0A57BFF /* GlassBackground.swift */; };
+		68BC2F8E69F9CF511A330775 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AEEAAF470121DF800EE98 /* ProfileView.swift */; };
+		6A2E51300F9743544144A1D9 /* sfx_heart.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5FCCFF45F97668BF3C51692B /* sfx_heart.caf */; };
+		6B59955C0FA8D04A55C9BE2A /* SDKLaunchGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C1F063BC1D2292FF6D793D /* SDKLaunchGate.swift */; };
+		6CB5D25072436B4821BEA149 /* HomeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD87288DFF6628351E4B2E2 /* HomeCards.swift */; };
+		6CBA4209E6C296050BBD6DDB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207A2C0E833F67F649304B76 /* Theme.swift */; };
+		749426F01CC0B661C1054215 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1FCA5CA73568FA0BCA876B /* Achievement.swift */; };
+		7AE4C8A1994047CD6A13EF15 /* PlayerProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B264E747102388083B36F46 /* PlayerProfileStore.swift */; };
+		7B92697CF2968109CE2D27AF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF033339309EBBB0CB6ED6 /* AudioManager.swift */; };
+		7E7358E2E7B11D45EFA88D1F /* sfx_emerald.caf in Resources */ = {isa = PBXBuildFile; fileRef = B0E82F10BF6789FA65C292C9 /* sfx_emerald.caf */; };
+		7F1C1E9FB4A44FDC0DFFAB31 /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633FAC533E84E7F7D36D9D0F /* SeededGenerator.swift */; };
+		7FB91C384D9F9DA897AC761F /* GameControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66558CBE7239C44354FFD054 /* GameControllerTests.swift */; };
+		7FF5CCFF2954DDFDD3F38EC7 /* AdjustSdk in Frameworks */ = {isa = PBXBuildFile; productRef = AB52524C75645630797E4D6A /* AdjustSdk */; };
+		81DF1AEC50651341BA6C0170 /* sfx_newBest.caf in Resources */ = {isa = PBXBuildFile; fileRef = 806FDB4CF4862294B52062FD /* sfx_newBest.caf */; };
+		889D75DD1E4D9230D2110EEB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816BD6E45936FA858D8DEC58 /* MainTabView.swift */; };
+		930DA92954082FE76263BDDF /* sfx_tap.caf in Resources */ = {isa = PBXBuildFile; fileRef = 88D332A4F662F89AEF86E83C /* sfx_tap.caf */; };
+		995ED6D9FCF54ED10EE5D8CA /* GameSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071AC838AA69852E98A203F /* GameSessionTests.swift */; };
+		9C25408ADEC9796F22EFF53B /* RoyalTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABD5209877D69E9773C65DF /* RoyalTabBar.swift */; };
+		A0BA0C801C81E2B38F582B09 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CAC3DA9D0FB52B7C9BD79F /* HapticsManager.swift */; };
+		A0EB3E9BF0285E7431654DBF /* ArtworkPainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE468CD24270D4C77F3110 /* ArtworkPainter.swift */; };
+		A12D1B0901D051DD45A397B5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583561CECF33EF7D69D87832 /* GameView.swift */; };
+		A5C12EEB9A43B37BF65CC56A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EADAED502A89681CB64F21D /* RootView.swift */; };
+		ABEACF72B5489D8B2507623C /* sfx_achievement.caf in Resources */ = {isa = PBXBuildFile; fileRef = 25A1CF98D3865F324A1E761D /* sfx_achievement.caf */; };
+		B00A53FA787AC09D644EE61E /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D366A0721CF9938BA460C69 /* AchievementsView.swift */; };
+		B53E9C163BBD4631C06AF816 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035B4CD377557B5F470D29F6 /* Security.framework */; };
+		BC52B8CAC52ACD10D3D267B7 /* sfx_bomb.caf in Resources */ = {isa = PBXBuildFile; fileRef = EF29DCFA5F78597A804D1A10 /* sfx_bomb.caf */; };
+		BF052A620B5876166FC0FFFC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D018344D707853AD0CBC24 /* OnboardingView.swift */; };
+		BFDDE6B7BCD0F27BA0DD85E7 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A6E9A52617784DBFD2AA8 /* SettingsStore.swift */; };
+		C27FF568CFA2C3103150F420 /* sfx_countdown.caf in Resources */ = {isa = PBXBuildFile; fileRef = CB573962A95E82103B625DCB /* sfx_countdown.caf */; };
+		C2C747DD3C145634BE329C2A /* PlayerProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11855C66858D4B5B225ED11 /* PlayerProgress.swift */; };
+		C5D388A66CA10ED60136F010 /* AchievementAndDailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF6B1C66CC7398F2554AF0 /* AchievementAndDailyTests.swift */; };
+		D36F2BD0C88DC93C24ADE575 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC9FD988F08E100E3D15F8A /* KeyValueStore.swift */; };
+		E0F25955D030129EC6EBAFE0 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232A5FF9FAE1BD88F3C66DA /* PersistenceTests.swift */; };
+		E3F60327A9D3FEE5B66BBE1B /* ProfileAndStatisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03EF026936E0833903FA01 /* ProfileAndStatisticsTests.swift */; };
+		EA92BFFB8574C42784BEB5B1 /* FallingObjectKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F78FC9EFC7CD00D5D76CFF /* FallingObjectKind.swift */; };
+		ED25C71647C2F7AFB7A9FE95 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B5C742F3A32AAF5B1222EA /* StoreKit.framework */; };
+		F5B812F4F0089EE12BB469F6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5F689DF8E093773A0DD95 /* GameScene.swift */; };
+		FEBCB8444AF68F2A4AE70E06 /* StorageQuotaManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D9F88B715922F353AB33EE /* StorageQuotaManager.xcframework */; };
+		FFC11A702F4CCC5D735932D8 /* sfx_amethyst.caf in Resources */ = {isa = PBXBuildFile; fileRef = 171A10D2D16792CA911504AC /* sfx_amethyst.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51F59DABFE3E6473A2745B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32E2233BF7AF274198994B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C08030D17DE8455F769F233;
+			remoteInfo = CatchTheJewels;
+		};
+		638A8E70FC781105F6530703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32E2233BF7AF274198994B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C08030D17DE8455F769F233;
+			remoteInfo = CatchTheJewels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		035B4CD377557B5F470D29F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		072027DF69C2A33667758B95 /* music_royal_loop.m4a */ = {isa = PBXFileReference; path = music_royal_loop.m4a; sourceTree = "<group>"; };
+		0D1F1A9534B026FA31182E0A /* GameNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNodes.swift; sourceTree = "<group>"; };
+		1073E9B9FDAF97C39F107FA3 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		109B6DC261B3AE557907EA50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		171A10D2D16792CA911504AC /* sfx_amethyst.caf */ = {isa = PBXFileReference; path = sfx_amethyst.caf; sourceTree = "<group>"; };
+		1829BCA1D17986F283D90697 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		184FBF2B2EECC1D60FB4D161 /* CatchTheJewelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchTheJewelsUITests.swift; sourceTree = "<group>"; };
+		1D220C9E5E56F9F02302C757 /* CatchTheJewelsTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CatchTheJewelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D33C2555C002CB7293DE960 /* DifficultyAndSpawnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyAndSpawnTests.swift; sourceTree = "<group>"; };
+		1D366A0721CF9938BA460C69 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		1F42386D8FBCAA3C3C57AAFE /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		207A2C0E833F67F649304B76 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		20B5C742F3A32AAF5B1222EA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		25A1CF98D3865F324A1E761D /* sfx_achievement.caf */ = {isa = PBXFileReference; path = sfx_achievement.caf; sourceTree = "<group>"; };
+		28CAC3DA9D0FB52B7C9BD79F /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		31C1F063BC1D2292FF6D793D /* SDKLaunchGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLaunchGate.swift; sourceTree = "<group>"; };
+		3970472AAB8A311312E06C81 /* CatchTheJewelsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchTheJewelsApp.swift; sourceTree = "<group>"; };
+		399E5E96AC39DB19D992BCB8 /* LaunchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchOptions.swift; sourceTree = "<group>"; };
+		39F78FC9EFC7CD00D5D76CFF /* FallingObjectKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingObjectKind.swift; sourceTree = "<group>"; };
+		3A70C007892365892DC142E4 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		41D018344D707853AD0CBC24 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		442A16B6FEC6C3421D1CE4B2 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		4494346A171BD6BE514BE6EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45D9F88B715922F353AB33EE /* StorageQuotaManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StorageQuotaManager.xcframework; path = Frameworks/StorageQuotaManager.xcframework; sourceTree = "<group>"; };
+		4EADAED502A89681CB64F21D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		583561CECF33EF7D69D87832 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5AFE468CD24270D4C77F3110 /* ArtworkPainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkPainter.swift; sourceTree = "<group>"; };
+		5DCA8A4F1D176B33A7AE0B33 /* SpawnPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpawnPlanner.swift; sourceTree = "<group>"; };
+		5E03EF026936E0833903FA01 /* ProfileAndStatisticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAndStatisticsTests.swift; sourceTree = "<group>"; };
+		5FCCFF45F97668BF3C51692B /* sfx_heart.caf */ = {isa = PBXFileReference; path = sfx_heart.caf; sourceTree = "<group>"; };
+		61C4A7C7E036F0EAC26BFB02 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		6232A5FF9FAE1BD88F3C66DA /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		633FAC533E84E7F7D36D9D0F /* SeededGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeededGenerator.swift; sourceTree = "<group>"; };
+		66558CBE7239C44354FFD054 /* GameControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerTests.swift; sourceTree = "<group>"; };
+		6B264E747102388083B36F46 /* PlayerProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfileStore.swift; sourceTree = "<group>"; };
+		70EDF2D5A012F3BB58352A6D /* TiltInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltInput.swift; sourceTree = "<group>"; };
+		713AEEAAF470121DF800EE98 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7166D4F4A94D37B959136F9B /* sfx_gold.caf */ = {isa = PBXFileReference; path = sfx_gold.caf; sourceTree = "<group>"; };
+		7631867A7AD4B3ED4221CF53 /* sfx_gameOver.caf */ = {isa = PBXFileReference; path = sfx_gameOver.caf; sourceTree = "<group>"; };
+		77F61401CD16412CB4781E22 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		7BD5ACD6E55054BC76FCF697 /* GameOverlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverlays.swift; sourceTree = "<group>"; };
+		7C58E05CFE883A87CFD83D36 /* GameGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameGeometry.swift; sourceTree = "<group>"; };
+		7CD87288DFF6628351E4B2E2 /* HomeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCards.swift; sourceTree = "<group>"; };
+		7DC9FD988F08E100E3D15F8A /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
+		806FDB4CF4862294B52062FD /* sfx_newBest.caf */ = {isa = PBXFileReference; path = sfx_newBest.caf; sourceTree = "<group>"; };
+		816BD6E45936FA858D8DEC58 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		826A6E9A52617784DBFD2AA8 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		84985490850E7C9199AB0CD0 /* ArtworkRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkRenderer.swift; sourceTree = "<group>"; };
+		88D332A4F662F89AEF86E83C /* sfx_tap.caf */ = {isa = PBXFileReference; path = sfx_tap.caf; sourceTree = "<group>"; };
+		9C1FCA5CA73568FA0BCA876B /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		9ED5F689DF8E093773A0DD95 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9FABE383C4CFEE45D427AE8B /* sfx_start.caf */ = {isa = PBXFileReference; path = sfx_start.caf; sourceTree = "<group>"; };
+		A2CC7A190DE9CEC7CF5C160D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AABD5209877D69E9773C65DF /* RoyalTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoyalTabBar.swift; sourceTree = "<group>"; };
+		AEFD9EED6ABEAA19E0A57BFF /* GlassBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassBackground.swift; sourceTree = "<group>"; };
+		B0E82F10BF6789FA65C292C9 /* sfx_emerald.caf */ = {isa = PBXFileReference; path = sfx_emerald.caf; sourceTree = "<group>"; };
+		B1470E9FCA9971736AD1F975 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		B3903D7F10AD371445219DDC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C11855C66858D4B5B225ED11 /* PlayerProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProgress.swift; sourceTree = "<group>"; };
+		C6D3F7FD15D128AB7607AD7C /* ProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStore.swift; sourceTree = "<group>"; };
+		CB573962A95E82103B625DCB /* sfx_countdown.caf */ = {isa = PBXFileReference; path = sfx_countdown.caf; sourceTree = "<group>"; };
+		CFBF31FF9DEC67A5896327F5 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		D071AC838AA69852E98A203F /* GameSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionTests.swift; sourceTree = "<group>"; };
+		DC0E34BA02BD5704BC13F65B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		EC82139E08A65660EADECE7C /* sfx_ruby.caf */ = {isa = PBXFileReference; path = sfx_ruby.caf; sourceTree = "<group>"; };
+		EE8FC816A1979001C4F141BA /* DailyChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallenge.swift; sourceTree = "<group>"; };
+		EF283FFC35A88D1C81E717B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF29DCFA5F78597A804D1A10 /* sfx_bomb.caf */ = {isa = PBXFileReference; path = sfx_bomb.caf; sourceTree = "<group>"; };
+		F0EC37636BDCE8BB9F10A5D0 /* CatchTheJewelsUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CatchTheJewelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32D0BF41A42B362066AF54B /* CatchTheJewels.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CatchTheJewels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BF033339309EBBB0CB6ED6 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		F6AF6B1C66CC7398F2554AF0 /* AchievementAndDailyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementAndDailyTests.swift; sourceTree = "<group>"; };
+		F9F8473C28F077376B562A0A /* sfx_sapphire.caf */ = {isa = PBXFileReference; path = sfx_sapphire.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E5CD9BE7B1ED013E13E562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBCB8444AF68F2A4AE70E06 /* StorageQuotaManager.xcframework in Frameworks */,
+				7FF5CCFF2954DDFDD3F38EC7 /* AdjustSdk in Frameworks */,
+				B53E9C163BBD4631C06AF816 /* Security.framework in Frameworks */,
+				ED25C71647C2F7AFB7A9FE95 /* StoreKit.framework in Frameworks */,
+				4CAA054E7EA96E88B3ADAE39 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		389D5D628EBE7468BA03DAFF /* CatchTheJewels */ = {
+			isa = PBXGroup;
+			children = (
+				FB2FADB7F9E5406D91E75793 /* Achievements */,
+				642CA8F24191DEF9B7ED668D /* App */,
+				C27AA1C10D87D19676B80363 /* Artwork */,
+				58445B936D9E397D6F04FC9E /* DailyChallenge */,
+				CED7EED326C8C38CA81E5054 /* DesignSystem */,
+				62AFA538BA72F59EE7D0A210 /* Game */,
+				5FA22B952C148159AE5C2CC0 /* Home */,
+				BCB10AB3CB86E40B45BC5A04 /* Models */,
+				930EFB3A3B296F1EE69C6263 /* Onboarding */,
+				D498D869956297D2A4C090FC /* Play */,
+				7CF7B567A4805281F6FCF6C0 /* Profile */,
+				EBDC7627E83BC05C13BFAE53 /* Resources */,
+				96975DEAD52164E62CC89821 /* Services */,
+				5CF12D8DBC39E0ADEE8008CA /* Settings */,
+			);
+			path = CatchTheJewels;
+			sourceTree = "<group>";
+		};
+		3BFB85269F14EEA7E994FD14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32D0BF41A42B362066AF54B /* CatchTheJewels.app */,
+				1D220C9E5E56F9F02302C757 /* CatchTheJewelsTests.xctest */,
+				F0EC37636BDCE8BB9F10A5D0 /* CatchTheJewelsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BEAD8530470F1F9F6FBB27 /* CatchTheJewelsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				184FBF2B2EECC1D60FB4D161 /* CatchTheJewelsUITests.swift */,
+			);
+			path = CatchTheJewelsUITests;
+			sourceTree = "<group>";
+		};
+		58445B936D9E397D6F04FC9E /* DailyChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				EE8FC816A1979001C4F141BA /* DailyChallenge.swift */,
+			);
+			path = DailyChallenge;
+			sourceTree = "<group>";
+		};
+		5CF12D8DBC39E0ADEE8008CA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B1470E9FCA9971736AD1F975 /* HowToPlayView.swift */,
+				1F42386D8FBCAA3C3C57AAFE /* PrivacyView.swift */,
+				A2CC7A190DE9CEC7CF5C160D /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5FA22B952C148159AE5C2CC0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7CD87288DFF6628351E4B2E2 /* HomeCards.swift */,
+				109B6DC261B3AE557907EA50 /* HomeView.swift */,
+				816BD6E45936FA858D8DEC58 /* MainTabView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6297F1276F94A20CC1EABF49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1829BCA1D17986F283D90697 /* libc++.tbd */,
+				035B4CD377557B5F470D29F6 /* Security.framework */,
+				45D9F88B715922F353AB33EE /* StorageQuotaManager.xcframework */,
+				20B5C742F3A32AAF5B1222EA /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62AFA538BA72F59EE7D0A210 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				77F61401CD16412CB4781E22 /* GameController.swift */,
+				0D1F1A9534B026FA31182E0A /* GameNodes.swift */,
+				7BD5ACD6E55054BC76FCF697 /* GameOverlays.swift */,
+				9ED5F689DF8E093773A0DD95 /* GameScene.swift */,
+				583561CECF33EF7D69D87832 /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		642CA8F24191DEF9B7ED668D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				442A16B6FEC6C3421D1CE4B2 /* AppModel.swift */,
+				3970472AAB8A311312E06C81 /* CatchTheJewelsApp.swift */,
+				EF283FFC35A88D1C81E717B5 /* Info.plist */,
+				399E5E96AC39DB19D992BCB8 /* LaunchOptions.swift */,
+				4EADAED502A89681CB64F21D /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7B6591A386CCE020BB0AC895 = {
+			isa = PBXGroup;
+			children = (
+				389D5D628EBE7468BA03DAFF /* CatchTheJewels */,
+				9650EDF0DCEA15728CB47746 /* CatchTheJewelsTests */,
+				52BEAD8530470F1F9F6FBB27 /* CatchTheJewelsUITests */,
+				88356ACE7B7840F28ACA0F26 /* Config */,
+				6297F1276F94A20CC1EABF49 /* Frameworks */,
+				3BFB85269F14EEA7E994FD14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF7B567A4805281F6FCF6C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				713AEEAAF470121DF800EE98 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		88356ACE7B7840F28ACA0F26 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1073E9B9FDAF97C39F107FA3 /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		930EFB3A3B296F1EE69C6263 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				41D018344D707853AD0CBC24 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9650EDF0DCEA15728CB47746 /* CatchTheJewelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6AF6B1C66CC7398F2554AF0 /* AchievementAndDailyTests.swift */,
+				1D33C2555C002CB7293DE960 /* DifficultyAndSpawnTests.swift */,
+				66558CBE7239C44354FFD054 /* GameControllerTests.swift */,
+				D071AC838AA69852E98A203F /* GameSessionTests.swift */,
+				6232A5FF9FAE1BD88F3C66DA /* PersistenceTests.swift */,
+				5E03EF026936E0833903FA01 /* ProfileAndStatisticsTests.swift */,
+			);
+			path = CatchTheJewelsTests;
+			sourceTree = "<group>";
+		};
+		96975DEAD52164E62CC89821 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF033339309EBBB0CB6ED6 /* AudioManager.swift */,
+				28CAC3DA9D0FB52B7C9BD79F /* HapticsManager.swift */,
+				7DC9FD988F08E100E3D15F8A /* KeyValueStore.swift */,
+				6B264E747102388083B36F46 /* PlayerProfileStore.swift */,
+				C6D3F7FD15D128AB7607AD7C /* ProgressStore.swift */,
+				31C1F063BC1D2292FF6D793D /* SDKLaunchGate.swift */,
+				826A6E9A52617784DBFD2AA8 /* SettingsStore.swift */,
+				70EDF2D5A012F3BB58352A6D /* TiltInput.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B31A35F09CC4917F0BB842EE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				072027DF69C2A33667758B95 /* music_royal_loop.m4a */,
+				25A1CF98D3865F324A1E761D /* sfx_achievement.caf */,
+				171A10D2D16792CA911504AC /* sfx_amethyst.caf */,
+				EF29DCFA5F78597A804D1A10 /* sfx_bomb.caf */,
+				CB573962A95E82103B625DCB /* sfx_countdown.caf */,
+				B0E82F10BF6789FA65C292C9 /* sfx_emerald.caf */,
+				7631867A7AD4B3ED4221CF53 /* sfx_gameOver.caf */,
+				7166D4F4A94D37B959136F9B /* sfx_gold.caf */,
+				5FCCFF45F97668BF3C51692B /* sfx_heart.caf */,
+				806FDB4CF4862294B52062FD /* sfx_newBest.caf */,
+				EC82139E08A65660EADECE7C /* sfx_ruby.caf */,
+				F9F8473C28F077376B562A0A /* sfx_sapphire.caf */,
+				9FABE383C4CFEE45D427AE8B /* sfx_start.caf */,
+				88D332A4F662F89AEF86E83C /* sfx_tap.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		BCB10AB3CB86E40B45BC5A04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A70C007892365892DC142E4 /* Difficulty.swift */,
+				39F78FC9EFC7CD00D5D76CFF /* FallingObjectKind.swift */,
+				7C58E05CFE883A87CFD83D36 /* GameGeometry.swift */,
+				CFBF31FF9DEC67A5896327F5 /* GameSession.swift */,
+				C11855C66858D4B5B225ED11 /* PlayerProgress.swift */,
+				633FAC533E84E7F7D36D9D0F /* SeededGenerator.swift */,
+				5DCA8A4F1D176B33A7AE0B33 /* SpawnPlanner.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C27AA1C10D87D19676B80363 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				5AFE468CD24270D4C77F3110 /* ArtworkPainter.swift */,
+				84985490850E7C9199AB0CD0 /* ArtworkRenderer.swift */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		CED7EED326C8C38CA81E5054 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				DC0E34BA02BD5704BC13F65B /* Components.swift */,
+				AEFD9EED6ABEAA19E0A57BFF /* GlassBackground.swift */,
+				AABD5209877D69E9773C65DF /* RoyalTabBar.swift */,
+				207A2C0E833F67F649304B76 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		D498D869956297D2A4C090FC /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				61C4A7C7E036F0EAC26BFB02 /* PlayView.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		EBDC7627E83BC05C13BFAE53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4494346A171BD6BE514BE6EA /* Assets.xcassets */,
+				B3903D7F10AD371445219DDC /* PrivacyInfo.xcprivacy */,
+				B31A35F09CC4917F0BB842EE /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB2FADB7F9E5406D91E75793 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				9C1FCA5CA73568FA0BCA876B /* Achievement.swift */,
+				1D366A0721CF9938BA460C69 /* AchievementsView.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DED24F1FD048765FA047288 /* CatchTheJewelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E3EBE96769E480B006F6672 /* Build configuration list for PBXNativeTarget "CatchTheJewelsTests" */;
+			buildPhases = (
+				08B9F1E1A488A389BFE24466 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A993D807F2AC0C579FAF6B82 /* PBXTargetDependency */,
+			);
+			name = CatchTheJewelsTests;
+			packageProductDependencies = (
+			);
+			productName = CatchTheJewelsTests;
+			productReference = 1D220C9E5E56F9F02302C757 /* CatchTheJewelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C08030D17DE8455F769F233 /* CatchTheJewels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B3F8F2C247E1C28A7378EA /* Build configuration list for PBXNativeTarget "CatchTheJewels" */;
+			buildPhases = (
+				4C47364EFC581E5EA782273D /* Sources */,
+				8C0C11879555F9988971F4BC /* Resources */,
+				79E5CD9BE7B1ED013E13E562 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatchTheJewels;
+			packageProductDependencies = (
+				AB52524C75645630797E4D6A /* AdjustSdk */,
+			);
+			productName = CatchTheJewels;
+			productReference = F32D0BF41A42B362066AF54B /* CatchTheJewels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9CCF08EFCCE95FAABFC1009 /* CatchTheJewelsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FC927ECE81B9F16ECC9D3E9 /* Build configuration list for PBXNativeTarget "CatchTheJewelsUITests" */;
+			buildPhases = (
+				C877AC661F37A52AC5622BA5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E856CFF51C6C7ACCEBD21A3D /* PBXTargetDependency */,
+			);
+			name = CatchTheJewelsUITests;
+			packageProductDependencies = (
+			);
+			productName = CatchTheJewelsUITests;
+			productReference = F0EC37636BDCE8BB9F10A5D0 /* CatchTheJewelsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32E2233BF7AF274198994B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2DED24F1FD048765FA047288 = {
+						DevelopmentTeam = "$(APP_DEVELOPMENT_TEAM)";
+					};
+					9C08030D17DE8455F769F233 = {
+						DevelopmentTeam = "$(APP_DEVELOPMENT_TEAM)";
+						ProvisioningStyle = Automatic;
+					};
+					D9CCF08EFCCE95FAABFC1009 = {
+						DevelopmentTeam = "$(APP_DEVELOPMENT_TEAM)";
+						TestTargetID = 9C08030D17DE8455F769F233;
+					};
+				};
+			};
+			buildConfigurationList = DF4605AFF5FE01879058D357 /* Build configuration list for PBXProject "CatchTheJewels" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7B6591A386CCE020BB0AC895;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5FCDE7F6BCBAC5F4A0BD9A17 /* XCRemoteSwiftPackageReference "ios_sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3BFB85269F14EEA7E994FD14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C08030D17DE8455F769F233 /* CatchTheJewels */,
+				2DED24F1FD048765FA047288 /* CatchTheJewelsTests */,
+				D9CCF08EFCCE95FAABFC1009 /* CatchTheJewelsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C0C11879555F9988971F4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16937297B5F13E683BC96755 /* Assets.xcassets in Resources */,
+				21F5ADAF9CF53495ACB5E4B4 /* PrivacyInfo.xcprivacy in Resources */,
+				06515653B51CA96B3BC045D0 /* music_royal_loop.m4a in Resources */,
+				ABEACF72B5489D8B2507623C /* sfx_achievement.caf in Resources */,
+				FFC11A702F4CCC5D735932D8 /* sfx_amethyst.caf in Resources */,
+				BC52B8CAC52ACD10D3D267B7 /* sfx_bomb.caf in Resources */,
+				C27FF568CFA2C3103150F420 /* sfx_countdown.caf in Resources */,
+				7E7358E2E7B11D45EFA88D1F /* sfx_emerald.caf in Resources */,
+				42FDD31CD0306C5A82421894 /* sfx_gameOver.caf in Resources */,
+				0DD0A2A8095B59CDDDD11D98 /* sfx_gold.caf in Resources */,
+				6A2E51300F9743544144A1D9 /* sfx_heart.caf in Resources */,
+				81DF1AEC50651341BA6C0170 /* sfx_newBest.caf in Resources */,
+				3B2D54933CFEA9CDDAD4D93A /* sfx_ruby.caf in Resources */,
+				0AD76149DE75BF5EB75F9FAE /* sfx_sapphire.caf in Resources */,
+				5001332AD545D4C0AD5F3A5E /* sfx_start.caf in Resources */,
+				930DA92954082FE76263BDDF /* sfx_tap.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08B9F1E1A488A389BFE24466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D388A66CA10ED60136F010 /* AchievementAndDailyTests.swift in Sources */,
+				2A15F7EC53B62F2C3EDFA567 /* DifficultyAndSpawnTests.swift in Sources */,
+				7FB91C384D9F9DA897AC761F /* GameControllerTests.swift in Sources */,
+				995ED6D9FCF54ED10EE5D8CA /* GameSessionTests.swift in Sources */,
+				E0F25955D030129EC6EBAFE0 /* PersistenceTests.swift in Sources */,
+				E3F60327A9D3FEE5B66BBE1B /* ProfileAndStatisticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C47364EFC581E5EA782273D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749426F01CC0B661C1054215 /* Achievement.swift in Sources */,
+				B00A53FA787AC09D644EE61E /* AchievementsView.swift in Sources */,
+				37176C91AC59B820FBE73365 /* AppModel.swift in Sources */,
+				A0EB3E9BF0285E7431654DBF /* ArtworkPainter.swift in Sources */,
+				18E9C53C84C10F67AEB208CA /* ArtworkRenderer.swift in Sources */,
+				7B92697CF2968109CE2D27AF /* AudioManager.swift in Sources */,
+				4AF42331713569E42C8ED991 /* CatchTheJewelsApp.swift in Sources */,
+				2F9F9B1EF883F9353C2D6B7F /* Components.swift in Sources */,
+				3620AD7C3A3CCD8BDFB32295 /* DailyChallenge.swift in Sources */,
+				536F8F6FA09D123728ACCD63 /* Difficulty.swift in Sources */,
+				EA92BFFB8574C42784BEB5B1 /* FallingObjectKind.swift in Sources */,
+				45C54F4DFA32E1757FC26DBD /* GameController.swift in Sources */,
+				55F34DDDE93AD814F7562C0B /* GameGeometry.swift in Sources */,
+				470926A496B65BA3898B2D7E /* GameNodes.swift in Sources */,
+				342EACB2A525EF4BFB1B3915 /* GameOverlays.swift in Sources */,
+				F5B812F4F0089EE12BB469F6 /* GameScene.swift in Sources */,
+				224A7400178F191E9E33F8DF /* GameSession.swift in Sources */,
+				A12D1B0901D051DD45A397B5 /* GameView.swift in Sources */,
+				65663BA46915BA6C729FB3E0 /* GlassBackground.swift in Sources */,
+				A0BA0C801C81E2B38F582B09 /* HapticsManager.swift in Sources */,
+				6CB5D25072436B4821BEA149 /* HomeCards.swift in Sources */,
+				4A1C4D8A8981527F3AF2B4B4 /* HomeView.swift in Sources */,
+				6409460DFE71B1E001993806 /* HowToPlayView.swift in Sources */,
+				D36F2BD0C88DC93C24ADE575 /* KeyValueStore.swift in Sources */,
+				2F122F4308473F2600479BA9 /* LaunchOptions.swift in Sources */,
+				889D75DD1E4D9230D2110EEB /* MainTabView.swift in Sources */,
+				BF052A620B5876166FC0FFFC /* OnboardingView.swift in Sources */,
+				43EF86A445EE56AAAE3B0CE4 /* PlayView.swift in Sources */,
+				7AE4C8A1994047CD6A13EF15 /* PlayerProfileStore.swift in Sources */,
+				C2C747DD3C145634BE329C2A /* PlayerProgress.swift in Sources */,
+				0EBE50F1F32A38E5607BE81D /* PrivacyView.swift in Sources */,
+				68BC2F8E69F9CF511A330775 /* ProfileView.swift in Sources */,
+				1B87FED20D1614D69B3DF7BD /* ProgressStore.swift in Sources */,
+				A5C12EEB9A43B37BF65CC56A /* RootView.swift in Sources */,
+				9C25408ADEC9796F22EFF53B /* RoyalTabBar.swift in Sources */,
+				6B59955C0FA8D04A55C9BE2A /* SDKLaunchGate.swift in Sources */,
+				7F1C1E9FB4A44FDC0DFFAB31 /* SeededGenerator.swift in Sources */,
+				BFDDE6B7BCD0F27BA0DD85E7 /* SettingsStore.swift in Sources */,
+				21CEE021DAD08E731693F12E /* SettingsView.swift in Sources */,
+				4A8EB2C5F23C7EDD09FB26DD /* SpawnPlanner.swift in Sources */,
+				6CBA4209E6C296050BBD6DDB /* Theme.swift in Sources */,
+				44D8C1321EC7F103B52298E8 /* TiltInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C877AC661F37A52AC5622BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE462371C4EC32B9C59418D /* CatchTheJewelsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A993D807F2AC0C579FAF6B82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C08030D17DE8455F769F233 /* CatchTheJewels */;
+			targetProxy = 51F59DABFE3E6473A2745B65 /* PBXContainerItemProxy */;
+		};
+		E856CFF51C6C7ACCEBD21A3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C08030D17DE8455F769F233 /* CatchTheJewels */;
+			targetProxy = 638A8E70FC781105F6530703 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FA1D628DC1B2A857D8AB7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1073E9B9FDAF97C39F107FA3 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BB59AE0FDFC323DF851450A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(APP_DEVELOPMENT_TEAM)";
+				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Frameworks\"",
+				);
+				INFOPLIST_FILE = CatchTheJewels/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "$(inherited) -ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = CatchTheJewels;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B1B1240A0DFA9B22214F1EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "$(APP_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER).tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchTheJewels.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatchTheJewels";
+			};
+			name = Debug;
+		};
+		C2DFE80D879F297066ACD4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "$(APP_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER).uitests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatchTheJewels;
+			};
+			name = Release;
+		};
+		C95DE9EE0D99E72D2A6AE9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1073E9B9FDAF97C39F107FA3 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2F271CC6BDFB9EFE00ACD94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "$(APP_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER).uitests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatchTheJewels;
+			};
+			name = Debug;
+		};
+		F04FCE04B82633AF8D4FA996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(APP_DEVELOPMENT_TEAM)";
+				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Frameworks\"",
+				);
+				INFOPLIST_FILE = CatchTheJewels/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "$(inherited) -ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = CatchTheJewels;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		FE3658CBDB29D2B5EB9B7990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "$(APP_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_IDENTIFIER).tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchTheJewels.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatchTheJewels";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FC927ECE81B9F16ECC9D3E9 /* Build configuration list for PBXNativeTarget "CatchTheJewelsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2F271CC6BDFB9EFE00ACD94 /* Debug */,
+				C2DFE80D879F297066ACD4E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E3EBE96769E480B006F6672 /* Build configuration list for PBXNativeTarget "CatchTheJewelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B1240A0DFA9B22214F1EE4 /* Debug */,
+				FE3658CBDB29D2B5EB9B7990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7B3F8F2C247E1C28A7378EA /* Build configuration list for PBXNativeTarget "CatchTheJewels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB59AE0FDFC323DF851450A /* Debug */,
+				F04FCE04B82633AF8D4FA996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DF4605AFF5FE01879058D357 /* Build configuration list for PBXProject "CatchTheJewels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95DE9EE0D99E72D2A6AE9F6 /* Debug */,
+				0FA1D628DC1B2A857D8AB7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FCDE7F6BCBAC5F4A0BD9A17 /* XCRemoteSwiftPackageReference "ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adjust/ios_sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB52524C75645630797E4D6A /* AdjustSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FCDE7F6BCBAC5F4A0BD9A17 /* XCRemoteSwiftPackageReference "ios_sdk" */;
+			productName = AdjustSdk;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 32E2233BF7AF274198994B2A /* Project object */;
+}

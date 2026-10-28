@@ -1,0 +1,78 @@
+workflows:
+  ios-app-store:
+    name: Catch the Jewels - App Store Connect
+    instance_type: mac_mini_m2
+    max_build_duration: 120
+
+    environment:
+      groups:
+        - appstore_credentials
+        - ios_config
+      vars:
+        XCODE_PROJECT: CatchTheJewels.xcodeproj
+        XCODE_SCHEME: CatchTheJewels
+      xcode: 26.3
+
+    cache:
+      cache_paths:
+        - $HOME/Library/Caches/org.swift.swiftpm
+        - $HOME/Library/Developer/Xcode/DerivedData/**/SourcePackages
+
+    scripts:
+      - name: Validate release configuration
+        script: |
+          set -e
+          : "${BUNDLE_ID:?Set BUNDLE_ID in the ios_config variable group}"
+          : "${APPLE_TEAM_ID:?Set APPLE_TEAM_ID in the ios_config variable group}"
+          : "${APP_STORE_APPLE_ID:?Set APP_STORE_APPLE_ID in the ios_config variable group}"
+
+      - name: Configure bundle identifier and development team
+        script: |
+          set -e
+          sed -i '' "s|^APP_BUNDLE_IDENTIFIER =.*|APP_BUNDLE_IDENTIFIER = $BUNDLE_ID|" Config/Base.xcconfig
+          sed -i '' "s|^APP_DEVELOPMENT_TEAM =.*|APP_DEVELOPMENT_TEAM = $APPLE_TEAM_ID|" Config/Base.xcconfig
+
+      - name: Resolve Swift packages
+        script: |
+          xcodebuild -resolvePackageDependencies \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME"
+
+      - name: Initialize signing keychain
+        script: keychain initialize
+
+      - name: Fetch App Store signing files
+        script: |
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --create
+
+      - name: Add signing certificates
+        script: keychain add-certificates
+
+      - name: Apply provisioning profiles
+        script: xcode-project use-profiles
+
+      - name: Increment build number
+        script: |
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID")
+          agvtool new-version -all "$((LATEST_BUILD_NUMBER + 1))"
+
+      - name: Build signed IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
+    publishing:
+      app_store_connect:
+        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        key_id: $APP_STORE_CONNECT_KEY_IDENTIFIER
+        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+        submit_to_testflight: false
+        submit_to_app_store: false

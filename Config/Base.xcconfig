@@ -1,0 +1,10 @@
+// Catch the Jewels — shared build configuration.
+//
+// Before archiving for the App Store, set these two values:
+//   APP_BUNDLE_IDENTIFIER  — the bundle ID you registered in your Apple Developer account
+//   APP_DEVELOPMENT_TEAM   — your 10-character Team ID (Xcode > Settings > Accounts)
+//
+// The unit and UI test bundles derive their identifiers from APP_BUNDLE_IDENTIFIER.
+
+APP_BUNDLE_IDENTIFIER = com.yourcompany.catchthejewels
+APP_DEVELOPMENT_TEAM =

@@ -15,11 +15,9 @@ The root `codemagic.yaml` workflow builds a signed IPA and uploads it to App Sto
 In Codemagic, open the application and add these encrypted variables to a group named `appstore_credentials`:
 
 - `APP_STORE_CONNECT_PRIVATE_KEY`: complete contents of the downloaded `.p8` file
-- `APP_STORE_CONNECT_KEY_IDENTIFIER`: App Store Connect API Key ID
-- `APP_STORE_CONNECT_ISSUER_ID`: App Store Connect Issuer ID
 - `CERTIFICATE_PRIVATE_KEY`: PEM private key used to create or fetch the distribution certificate
 
-The bundle identifier (`com.crownx.game`), Apple Team ID (`TBTMM94Q45`) and numeric App Store Connect Apple ID (`6827957657`) are configured directly in `codemagic.yaml`.
+The bundle identifier (`com.crownx.game`), Apple Team ID (`TBTMM94Q45`), numeric App Store Connect Apple ID (`6827957657`), API Key ID (`HJDLRM8878`) and Issuer ID are configured directly in `codemagic.yaml`.
 
 To create `CERTIFICATE_PRIVATE_KEY` locally, run:
 

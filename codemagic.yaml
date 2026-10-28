@@ -11,6 +11,8 @@ workflows:
         BUNDLE_ID: com.crownx.game
         APPLE_TEAM_ID: TBTMM94Q45
         APP_STORE_APPLE_ID: "6827957657"
+        APP_STORE_CONNECT_KEY_IDENTIFIER: HJDLRM8878
+        APP_STORE_CONNECT_ISSUER_ID: deda282f-fb3b-4fb1-acda-42703ef0b028
         XCODE_PROJECT: CatchTheJewels.xcodeproj
         XCODE_SCHEME: CatchTheJewels
       xcode: 26.3

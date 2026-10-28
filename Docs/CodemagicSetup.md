@@ -21,9 +21,10 @@ In Codemagic, open the application and add these encrypted variables to a group 
 
 Add these variables to a group named `ios_config`:
 
-- `BUNDLE_ID`: final registered bundle identifier, for example `com.company.catchthejewels`
 - `APPLE_TEAM_ID`: 10-character Apple Developer Team ID
 - `APP_STORE_APPLE_ID`: numeric App Store Connect Apple ID
+
+The bundle identifier is fixed to `com.crownx.game` in both the Xcode configuration and `codemagic.yaml`.
 
 To create `CERTIFICATE_PRIVATE_KEY` locally, run:
 

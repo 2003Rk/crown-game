@@ -9,6 +9,7 @@ workflows:
         - appstore_credentials
         - ios_config
       vars:
+        BUNDLE_ID: com.crownx.game
         XCODE_PROJECT: CatchTheJewels.xcodeproj
         XCODE_SCHEME: CatchTheJewels
       xcode: 26.3
@@ -22,7 +23,6 @@ workflows:
       - name: Validate release configuration
         script: |
           set -e
-          : "${BUNDLE_ID:?Set BUNDLE_ID in the ios_config variable group}"
           : "${APPLE_TEAM_ID:?Set APPLE_TEAM_ID in the ios_config variable group}"
           : "${APP_STORE_APPLE_ID:?Set APP_STORE_APPLE_ID in the ios_config variable group}"
 
